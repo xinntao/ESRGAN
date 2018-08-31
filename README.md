@@ -37,14 +37,22 @@ In contrast to SRGAN, which claimed that **deeper models are increasingly diffic
   <img height="130" src="figures/RRDB.png">
 </p>
 
-
-We also propose the **network interpolation strategy** to balance the visual quality and PSNR.
+## Network Interpolation
+We propose the **network interpolation strategy** to balance the visual quality and PSNR.
 
 <p align="center">
   <img height="500" src="figures/net_interp.png">
 </p>
 
-<video src="figures/test.mp4" width="320" height="200" controls preload></video>
+We show the smooth animation with the interpolation parameters changing from 0 to 1. 
+<p align="center">
+  <img height="400" src="figures/43074.gif">
+</p>
+<p align="center">
+  <img height="480" src="figures/81.gif">
+  &nbsp &nbsp
+  <img height="480" src="figures/102061.gif">
+</p>
   
 ## Qualitative Results
 PSNR (evaluated on the luminance channel in YCbCr color space) and the perceptual index used in the PIRM-SR challenge are also provided for reference.
