@@ -44,6 +44,10 @@ We also propose the **network interpolation strategy** to balance the visual qua
   <img height="500" src="figures/net_interp.png">
 </p>
 
+<video autoplay="autoplay" loop="loop" width="400" height="300">
+  <source src="figures/test.mp4" type="video/mp4" />
+  <img src="figures/baboon.png" width="400" height="300" /></video>
+  
 ## Qualitative Results
 PSNR (evaluated on the luminance channel in YCbCr color space) and the perceptual index used in the PIRM-SR challenge are also provided for reference.
 
