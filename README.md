@@ -1,5 +1,5 @@
 # ESRGAN (Enhanced SRGAN) [[Paper]](https://arxiv.org/abs/1809.00219) [[BasicSR]](https://github.com/xinntao/BasicSR)
-## Enhanced Super-Resolution Generative Adversarial Networks
+### Enhanced Super-Resolution Generative Adversarial Networks
 By Xintao Wang, [Ke Yu](https://yuke93.github.io/), Shixiang Wu, [Jinjin Gu](http://www.jasongt.com/), Yihao Liu, [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ&hl=en), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/), [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao/), [Xiaoou Tang](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en)
 
 This repo only provides simple testing codes, pretrained models and the netwrok strategy demo. 
@@ -36,7 +36,7 @@ The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged datase
 - Python 3
 - PyTorch >= 0.4.0
 - Python package `cv2`, `numpy` 
-#### Test
+### Test models
 1. Clone this github repo. 
 ```
 git clone https://github.com/xinntao/ESRGAN
@@ -50,7 +50,15 @@ python test.py models/RRDB_ESRGAN_x4.pth
 python test.py models/RRDB_PSNR_x4.pth
 ```
 5. The results are in `./results` folder.
+### Network interpolation demo
+We can interpolate the RRDB_ESRGAN and RRDB_PSNR models with alpha in [0, 1].
 
+1. Run `python net_interp.py 0.8`, where *0.8* is the interpolation parameter.
+2. Run `python test.py models/interp_08.pth`, where *models/interp_08.pth* is the model path.
+
+<p align="center">
+  <img height="400" src="figures/43074.gif">
+</p>
 
 ## Introduction 
 We improve the [SRGAN](https://arxiv.org/abs/1609.04802) from three aspects:
@@ -75,9 +83,7 @@ We propose the **network interpolation strategy** to balance the visual quality 
 </p>
 
 We show the smooth animation with the interpolation parameters changing from 0 to 1. 
-<p align="center">
-  <img height="400" src="figures/43074.gif">
-</p>
+
 <p align="center">
   <img height="480" src="figures/81.gif">
   &nbsp &nbsp
