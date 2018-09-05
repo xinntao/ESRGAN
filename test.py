@@ -1,3 +1,4 @@
+import sys
 import os.path
 import glob
 import cv2
@@ -5,13 +6,12 @@ import numpy as np
 import torch
 import architecture as arch
 
-mode = 'ESRGAN'  # ESRGAN or RRDB_PSNR
-
+mode = sys.argv[1]  # ESRGAN or RRDB_PSNR
 
 if mode == 'ESRGAN':
     model_path = './models/RRDB_ESRGAN_x4.pth'
 elif mode == 'RRDB_PSNR':
-    model_path = './models/RRDB_PSNR_DF2K_x4.pth'
+    model_path = './models/RRDB_PSNR_x4.pth'
 
 test_img_folder = 'LR/*'
 
