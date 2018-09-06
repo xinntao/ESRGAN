@@ -18,7 +18,7 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
     }
 
 <p align="center">
-  <img height="400" src="figures/baboon.jpg">
+  <img src="figures/baboon.jpg">
 </p>
 
 The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged dataset with [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (proposed in [EDSR](https://github.com/LimBee/NTIRE2017))) is also able to achive high PSNR performance.
