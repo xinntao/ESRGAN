@@ -1,4 +1,4 @@
-# ESRGAN (Enhanced SRGAN) [[Paper]](https://arxiv.org/abs/1809.00219) [[BasicSR]](https://github.com/xinntao/BasicSR)
+# ESRGAN (Enhanced SRGAN) [[Paper]](https://arxiv.org/abs/1809.00219) [[BasicSR]](https://github.com/xinntao/BasicSR) 
 ### Enhanced Super-Resolution Generative Adversarial Networks
 By Xintao Wang, [Ke Yu](https://yuke93.github.io/), Shixiang Wu, [Jinjin Gu](http://www.jasongt.com/), Yihao Liu, [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ&hl=en), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/), [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao/), [Xiaoou Tang](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en)
 
@@ -8,7 +8,7 @@ This repo only provides simple testing codes, pretrained models and the netwrok 
 
 We won the first place in [PIRM2018-SR competition](https://www.pirm2018.org/PIRM-SR.html) (region 3) and got the best perceptual index.
 The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
-### BibTeX
+#### BibTeX
 
     @article{wang2018esrgan,
         author={Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Loy, Chen Change and Qiao, Yu and Tang, Xiaoou},
@@ -18,7 +18,7 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
     }
 
 <p align="center">
-  <img height="400" src="figures/baboon.png">
+  <img height="400" src="figures/baboon.jpg">
 </p>
 
 The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged dataset with [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (proposed in [EDSR](https://github.com/LimBee/NTIRE2017))) is also able to achive high PSNR performance.
@@ -69,17 +69,17 @@ We improve the [SRGAN](https://arxiv.org/abs/1609.04802) from three aspects:
 In contrast to SRGAN, which claimed that **deeper models are increasingly difficult to train**, our deeper ESRGAN model shows its superior performance with easy training.
 
 <p align="center">
-  <img height="100" src="figures/architecture.png">
+  <img height="100" src="figures/architecture.jpg">
 </p>
 <p align="center">
-  <img height="130" src="figures/RRDB.png">
+  <img height="130" src="figures/RRDB.jpg">
 </p>
 
 ## Network Interpolation
 We propose the **network interpolation strategy** to balance the visual quality and PSNR.
 
 <p align="center">
-  <img height="500" src="figures/net_interp.png">
+  <img height="500" src="figures/net_interp.jpg">
 </p>
 
 We show the smooth animation with the interpolation parameters changing from 0 to 1. 
@@ -94,20 +94,15 @@ We show the smooth animation with the interpolation parameters changing from 0 t
 PSNR (evaluated on the luminance channel in YCbCr color space) and the perceptual index used in the PIRM-SR challenge are also provided for reference.
 
 <p align="center">
-  <img src="figures/rlt_01.png">
+  <img src="figures/qualitative_cmp_01.jpg">
 </p>
 <p align="center">
-  <img src="figures/rlt_02.png">
+  <img src="figures/qualitative_cmp_02.jpg">
 </p>
 <p align="center">
-  <img src="figures/rlt_03.png">
+  <img src="figures/qualitative_cmp_03.jpg">
 </p>
 <p align="center">
-  <img src="figures/rlt_04.png">
+  <img src="figures/qualitative_cmp_04.jpg">
 </p>
-<p align="center">
-  <img src="figures/rlt_05.png">
-</p>
-<p align="center">
-  <img src="figures/rlt_06.png">
-</p>
+
