@@ -134,7 +134,7 @@ We find that residual scaling and smaller initialization can help to train a ver
 
 ## The influence of training patch size
 We observe that training a deeper network benefits from a larger patch size. Moreover, the deeper model achieves more improvement (∼0.12dB) than the shallower one (∼0.04dB) since larger model capacity is capable of taking full advantage of
-larger training patch size.
+larger training patch size. (Evaluated on Set5 dataset with RGB channels.)
 <p align="center">
   <img height="250" src="figures/patch_a.png">
   <img height="250" src="figures/patch_b.png">
