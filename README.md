@@ -22,14 +22,13 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
 </p>
 
 The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged dataset with [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (proposed in [EDSR](https://github.com/LimBee/NTIRE2017))) is also able to achive high PSNR performance.
-
-| Method | Training dataset | Set5 | Set14 | BSD100 | Urban100 | Manga109 |
+    
+| <sub>Method</sub> | <sub>Training dataset</sub> | <sub>Set5</sub> | <sub>Set14</sub> | <sub>BSD100</sub> | <sub>Urban100</sub> | <sub>Manga109</sub> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html)| 291| 30.48/0.8628 |27.50/0.7513|26.90/0.7101|24.52/0.7221|27.58/0.8555|
-| [EDSR](https://github.com/thstkdgus35/EDSR-PyTorch) | DIV2K | 32.46/0.8968 | 28.80/0.7876 | 27.71/0.7420 | 26.64/0.8033 | 31.02/0.9148 |
-| [RCAN](https://github.com/yulunzhang/RCAN) |  DIV2K | 32.63/0.9002 | 28.87/0.7889 | 27.77/0.7436 | 26.82/ 0.8087| 31.22/ 0.9173|
-|RRDB(ours)| DF2K| **32.73/0.9011** |**28.99/0.7917** |**27.85/0.7455** |**27.03/0.8153** |**31.66/0.9196**|
-
+| <sub>[SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html)</sub>| <sub>291</sub>| <sub>30.48/0.8628</sub> |<sub>27.50/0.7513</sub>|<sub>26.90/0.7101</sub>|<sub>24.52/0.7221</sub>|<sub>27.58/0.8555</sub>|
+| <sub>[EDSR](https://github.com/thstkdgus35/EDSR-PyTorch)</sub> | <sub>DIV2K</sub> | <sub>32.46/0.8968</sub> | <sub>28.80/0.7876</sub> | <sub>27.71/0.7420</sub> | <sub>26.64/0.8033</sub> | <sub>31.02/0.9148</sub> |
+| <sub>[RCAN](https://github.com/yulunzhang/RCAN)</sub> |  <sub>DIV2K</sub> | <sub>32.63/0.9002</sub> | <sub>28.87/0.7889</sub> | <sub>27.77/0.7436</sub> | <sub>26.82/ 0.8087</sub>| <sub>31.22/ 0.9173</sub>|
+|<sub>RRDB(ours)</sub>| <sub>DF2K</sub>| <sub>**32.73/0.9011**</sub> |<sub>**28.99/0.7917**</sub> |<sub>**27.85/0.7455**</sub> |<sub>**27.03/0.8153**</sub> |<sub>**31.66/0.9196**</sub>|
 
 ## Quick Test
 #### Dependencies
