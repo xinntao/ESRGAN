@@ -71,7 +71,7 @@ In contrast to SRGAN, which claimed that **deeper models are increasingly diffic
   <img height="120" src="figures/architecture.jpg">
 </p>
 <p align="center">
-  <img height="150" src="figures/RRDB.jpg">
+  <img height="180" src="figures/RRDB.png">
 </p>
 
 ## Network Interpolation
