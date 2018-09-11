@@ -33,8 +33,9 @@ The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged datase
 ## Quick Test
 #### Dependencies
 - Python 3
-- PyTorch >= 0.4.0
-- Python package `cv2`, `numpy` 
+- [PyTorch >= 0.4.0](https://pytorch.org/)
+- Python packages:  `pip install numpy opencv-python`
+
 ### Test models
 1. Clone this github repo. 
 ```
