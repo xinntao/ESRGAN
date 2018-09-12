@@ -1,10 +1,11 @@
 # ESRGAN (Enhanced SRGAN) [[Paper]](https://arxiv.org/abs/1809.00219) [[BasicSR]](https://github.com/xinntao/BasicSR) 
+## :smiley: Training codes are in [BasicSR](https://github.com/xinntao/BasicSR) repo.
 ### Enhanced Super-Resolution Generative Adversarial Networks
 By Xintao Wang, [Ke Yu](https://yuke93.github.io/), Shixiang Wu, [Jinjin Gu](http://www.jasongt.com/), Yihao Liu, [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ&hl=en), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/), [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao/), [Xiaoou Tang](https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en)
 
-This repo only provides simple testing codes, pretrained models and the netwrok strategy demo. 
+This repo only provides simple testing codes, pretrained models and the network strategy demo. 
 
-### :smiley: **For full training and testing codes, please refer to  [BasicSR](https://github.com/xinntao/BasicSR).**
+### **For full training and testing codes, please refer to  [BasicSR](https://github.com/xinntao/BasicSR).**
 
 We won the first place in [PIRM2018-SR competition](https://www.pirm2018.org/PIRM-SR.html) (region 3) and got the best perceptual index.
 The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
