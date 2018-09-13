@@ -10,13 +10,19 @@ This repo only provides simple testing codes, pretrained models and the network 
 We won the first place in [PIRM2018-SR competition](https://www.pirm2018.org/PIRM-SR.html) (region 3) and got the best perceptual index.
 The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
 #### BibTeX
-
+<!--
     @article{wang2018esrgan,
         author={Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Loy, Chen Change and Qiao, Yu and Tang, Xiaoou},
         title={ESRGAN: Enhanced super-resolution generative adversarial networks},
         journal={arXiv preprint arXiv:1809.00219},
         year={2018}
     }
+-->    
+     @inproceedings{wang2018esrgan,
+        author = {Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Loy, Chen Change and Qiao, Yu and Tang, Xiaoou},
+        title = {ESRGAN: Enhanced super-resolution generative adversarial networks},
+        booktitle = {European Conference on Computer Vision (ECCV) Workshops},
+        year = {2018}
 
 <p align="center">
   <img src="figures/baboon.jpg">
