@@ -18,11 +18,13 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
         year={2018}
     }
 -->    
-     @inproceedings{wang2018esrgan,
-        author = {Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Loy, Chen Change and Qiao, Yu and Tang, Xiaoou},
+     @InProceedings{wang2018esrgan,
+        author = {Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Qiao, Yu and Loy, Chen Change},
         title = {ESRGAN: Enhanced super-resolution generative adversarial networks},
-        booktitle = {European Conference on Computer Vision (ECCV) Workshops},
+        booktitle = {The European Conference on Computer Vision Workshops (ECCVW)},
+        month = {September},
         year = {2018}
+    }
 
 <p align="center">
   <img src="figures/baboon.jpg">
@@ -66,6 +68,22 @@ You can interpolate the RRDB_ESRGAN and RRDB_PSNR models with alpha in [0, 1].
 <p align="center">
   <img height="400" src="figures/43074.gif">
 </p>
+
+## Perceptual-driven SR Results
+
+You can download all the resutls from [Google Drive](https://drive.google.com/drive/folders/1iaM-c6EgT1FNoJAOKmDrK7YhEhtlKcLx?usp=sharing). (:heavy_check_mark: included;  :heavy_minus_sign: not included; :o: TODO)
+
+HR images can be downloaed from [BasicSR-Datasets](https://github.com/xinntao/BasicSR#datasets).
+
+| Datasets |LR | [*ESRGAN*](https://arxiv.org/abs/1809.00219) | [SRGAN](https://arxiv.org/abs/1609.04802) | [EnhanceNet](http://openaccess.thecvf.com/content_ICCV_2017/papers/Sajjadi_EnhanceNet_Single_Image_ICCV_2017_paper.pdf) | [CX](https://arxiv.org/abs/1803.04626) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Set5 |:heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :o:| :o: |
+| Set14 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :o:| :o: |
+| BSDS100 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :o:| :o: |
+| [PIRM](https://pirm.github.io/) <br><sup>(val, test)</sup> | :heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign: | :o:| :o: |
+| [OST300](https://arxiv.org/pdf/1804.02815.pdf) |:heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign: | :o:| :o: |
+| urban100 | :heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign: | :o:| :o: |
+| [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) <br><sup>(val, test)</sup> | :heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign: | :o:| :o: |
 
 ## ESRGAN
 We improve the [SRGAN](https://arxiv.org/abs/1609.04802) from three aspects:
