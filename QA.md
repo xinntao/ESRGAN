@@ -6,6 +6,8 @@ First, the released ESRGAN model in the GitHub (`RRDB_ESRGAN_x4.pth`) is **diffe
 We found that the lower perceptual index does not always guarantee a better visual quality.
 The aims for the competition and our ESRGAN work will be a bit different.
 We think the aim for the competition is the lower perceptual index and the aim for our ESRGAN work is the better visual quality.
+> More analyses can be found in Sec 4.1 and Sec 5 in [PIRM18-SR Chanllenge report](https://arxiv.org/pdf/1809.07517.pdf).
+> It points out that PI (perceptual index) is well correlated with the human-opinion-scores on a coarse scale, but it is not always well-correlated with these scores on a finer scale. This highlights the urgent need for better perceptual quality metrics.)
 
 Therefore, in the PIRM18-SR Challenge competition, we used several tricks for the best perceptual index (see Section 4.5 in the [paper](https://arxiv.org/abs/1809.00219)).
 
