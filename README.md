@@ -9,6 +9,13 @@ This repo only provides simple testing codes, pretrained models and the network 
 
 We won the first place in [PIRM2018-SR competition](https://www.pirm2018.org/PIRM-SR.html) (region 3) and got the best perceptual index.
 The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
+
+:triangular_flag_on_post: Add [Frequently Asked Questions](https://github.com/xinntao/ESRGAN/blob/master/QA.md).
+
+> For instance,
+> 1. How to reproduce your results in the PIRM18-SR Challenge (with low perceptual index)?
+> 2. How do you get the perceptual index in your ESRGAN paper?
+
 #### BibTeX
 <!--
     @article{wang2018esrgan,
