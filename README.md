@@ -1,5 +1,9 @@
 ## ESRGAN (Enhanced SRGAN) [[BasicSR]](https://github.com/xinntao/BasicSR) [[EDVR]](https://github.com/xinntao/EDVR) [[DNI]](https://xinntao.github.io/projects/DNI)
-### :smiley: Training codes are in [BasicSR](https://github.com/xinntao/BasicSR) repo.
+
+## We have merged the training codes of ESRGAN into [MMSR](https://github.com/open-mmlab/mmsr) :smile:
+
+MMSR is an open source image and video super-resolution toolbox based on PyTorch. It is a part of the [open-mmlab](https://github.com/open-mmlab) project developed by [Multimedia Laboratory, CUHK](http://mmlab.ie.cuhk.edu.hk/). MMSR is based on our previous projects: [BasicSR](https://github.com/xinntao/BasicSR), [ESRGAN](https://github.com/xinntao/ESRGAN), and [EDVR](https://github.com/xinntao/EDVR).
+
 We have simplified the network structure file.<br/>
 You can convert the previously save models (`*.pth`) with the script `transer_RRDB_models.py`;<br/>
 If you want to use the old arch, you can find it [here](https://github.com/xinntao/ESRGAN/releases/tag/old-arch).
