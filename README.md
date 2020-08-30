@@ -1,25 +1,12 @@
-## ESRGAN (Enhanced SRGAN) [[BasicSR]](https://github.com/xinntao/BasicSR) [[EDVR]](https://github.com/xinntao/EDVR) [[DNI]](https://xinntao.github.io/projects/DNI)
+## ESRGAN (Enhanced SRGAN) [:rocket: [BasicSR/EDVR](https://github.com/xinntao/BasicSR)]
 
-## We have merged the training codes of ESRGAN into [MMSR](https://github.com/open-mmlab/mmsr) :smile:
+#### The training codes are in :rocket: [BasicSR](https://github.com/xinntao/BasicSR). This repo only provides simple testing codes, pretrained models and the network interpolation demo.
 
-MMSR is an open source image and video super-resolution toolbox based on PyTorch. It is a part of the [open-mmlab](https://github.com/open-mmlab) project developed by [Multimedia Laboratory, CUHK](http://mmlab.ie.cuhk.edu.hk/). MMSR is based on our previous projects: [BasicSR](https://github.com/xinntao/BasicSR), [ESRGAN](https://github.com/xinntao/ESRGAN), and [EDVR](https://github.com/xinntao/EDVR).
-
-We have simplified the network structure file.<br/>
-You can convert the previously save models (`*.pth`) with the script `transer_RRDB_models.py`;<br/>
-If you want to use the old arch, you can find it [here](https://github.com/xinntao/ESRGAN/releases/tag/old-arch).
-
-
----
-Check out our new work on:<br/>
-1. **Video Super-Resolution**: [`EDVR: Video Restoration with Enhanced Deformable Convolutional Networks`](https://xinntao.github.io/projects/EDVR), which has won all four tracks in NTIRE 2019 Challenges on Video Restoration and Enhancement (CVPR19 Workshops).
-2. **DNI (CVPR19)**: [`Deep Network Interpolation for Continuous Imagery Effect Transition`](https://xinntao.github.io/projects/DNI)
----
-
+BasicSR is an **open source** image and video super-resolution toolbox based on PyTorch (will extend to more restoration tasks in the future). <br>
+It includes methods such as EDSR, RCAN, SRResNet, SRGAN, ESRGAN, EDVR, etc. It now also supports StyleGAN2.
 
 ### Enhanced Super-Resolution Generative Adversarial Networks
 By Xintao Wang, [Ke Yu](https://yuke93.github.io/), Shixiang Wu, [Jinjin Gu](http://www.jasongt.com/), Yihao Liu, [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ&hl=en), [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao/), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/)
-
-This repo only provides simple testing codes, pretrained models and the network strategy demo.  For full training and testing codes, please refer to  [BasicSR](https://github.com/xinntao/BasicSR).
 
 We won the first place in [PIRM2018-SR competition](https://www.pirm2018.org/PIRM-SR.html) (region 3) and got the best perceptual index.
 The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
@@ -31,14 +18,7 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
 > 2. How do you get the perceptual index in your ESRGAN paper?
 
 #### BibTeX
-<!--
-    @article{wang2018esrgan,
-        author={Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Loy, Chen Change and Qiao, Yu and Tang, Xiaoou},
-        title={ESRGAN: Enhanced super-resolution generative adversarial networks},
-        journal={arXiv preprint arXiv:1809.00219},
-        year={2018}
-    }
--->    
+
     @InProceedings{wang2018esrgan,
         author = {Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Qiao, Yu and Loy, Chen Change},
         title = {ESRGAN: Enhanced super-resolution generative adversarial networks},
@@ -52,7 +32,7 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
 </p>
 
 The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged dataset with [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (proposed in [EDSR](https://github.com/LimBee/NTIRE2017))) is also able to achive high PSNR performance.
-    
+
 | <sub>Method</sub> | <sub>Training dataset</sub> | <sub>Set5</sub> | <sub>Set14</sub> | <sub>BSD100</sub> | <sub>Urban100</sub> | <sub>Manga109</sub> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | <sub>[SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html)</sub>| <sub>291</sub>| <sub>30.48/0.8628</sub> |<sub>27.50/0.7513</sub>|<sub>26.90/0.7101</sub>|<sub>24.52/0.7221</sub>|<sub>27.58/0.8555</sub>|
@@ -67,12 +47,12 @@ The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged datase
 - Python packages:  `pip install numpy opencv-python`
 
 ### Test models
-1. Clone this github repo. 
+1. Clone this github repo.
 ```
 git clone https://github.com/xinntao/ESRGAN
 cd ESRGAN
 ```
-2. Place your own **low-resolution images** in `./LR` folder. (There are two sample images - baboon and comic). 
+2. Place your own **low-resolution images** in `./LR` folder. (There are two sample images - baboon and comic).
 3. Download pretrained models from [Google Drive](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY) or [Baidu Drive](https://pan.baidu.com/s/1-Lh6ma-wXzfH8NqeBtPaFQ). Place the models in `./models`. We provide two models with high perceptual quality and high PSNR performance (see [model list](https://github.com/xinntao/ESRGAN/tree/master/models)).
 4. Run test. We provide ESRGAN model and RRDB_PSNR model and you can config in the `test.py`.
 ```
@@ -127,7 +107,7 @@ We propose the **network interpolation strategy** to balance the visual quality 
   <img height="500" src="figures/net_interp.jpg">
 </p>
 
-We show the smooth animation with the interpolation parameters changing from 0 to 1. 
+We show the smooth animation with the interpolation parameters changing from 0 to 1.
 Interestingly, it is observed that the network interpolation strategy provides a smooth control of the RRDB_PSNR model and the fine-tuned ESRGAN model.
 
 <p align="center">
@@ -135,7 +115,7 @@ Interestingly, it is observed that the network interpolation strategy provides a
   &nbsp &nbsp
   <img height="480" src="figures/102061.gif">
 </p>
-  
+
 ## Qualitative Results
 PSNR (evaluated on the Y channel) and the perceptual index used in the PIRM-SR challenge are also provided for reference.
 
@@ -163,7 +143,7 @@ The red sign indicates the main improvement compared with the previous model.
 ## BN artifacts
 We empirically observe that BN layers tend to bring artifacts. These artifacts,
 namely BN artifacts, occasionally appear among iterations and different settings,
-violating the needs for a stable performance over training. We find that 
+violating the needs for a stable performance over training. We find that
 the network depth, BN position, training dataset and training loss
 have impact on the occurrence of BN artifacts.
 <p align="center">
