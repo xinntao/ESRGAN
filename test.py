@@ -1,11 +1,16 @@
 import os.path as osp
+import sys
 import glob
 import cv2
 import numpy as np
 import torch
 import RRDBNet_arch as arch
 
-model_path = 'models/RRDB_ESRGAN_x4.pth'  # models/RRDB_ESRGAN_x4.pth OR models/RRDB_PSNR_x4.pth
+if len(sys.argv) > 1:
+    model_path = sys.argv[1]
+else:
+    model_path = 'models/RRDB_ESRGAN_x4.pth'  # models/RRDB_ESRGAN_x4.pth OR models/RRDB_PSNR_x4.pth
+    
 device = torch.device('cuda')  # if you want to run on CPU, change 'cuda' -> cpu
 # device = torch.device('cpu')
 
