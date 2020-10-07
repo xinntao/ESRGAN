@@ -6,7 +6,7 @@ alpha = float(sys.argv[1])
 
 net_PSNR_path = './models/RRDB_PSNR_x4.pth'
 net_ESRGAN_path = './models/RRDB_ESRGAN_x4.pth'
-net_interp_path = './models/interp_{:02d}.pth'.format(int(alpha*10))
+net_interp_path = './models/interp_{:02d}.pth'.format(int(alpha*20))
 
 net_PSNR = torch.load(net_PSNR_path)
 net_ESRGAN = torch.load(net_ESRGAN_path)
