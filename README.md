@@ -1,15 +1,16 @@
 ## ESRGAN (Enhanced SRGAN) [:rocket: [BasicSR/EDVR](https://github.com/xinntao/BasicSR)]
 
-We have extended ESRGAN to [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN), which is a **more practical algorithms for real-world image restoration**. For example, it can also remove annoying JPEG compression artifacts. <br> You are recommended to have a try :smiley:
+:sparkles: **New Updates.**
+We have extended ESRGAN to [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN), which is a **more practical algorithm for real-world image restoration**. For example, it can also remove annoying JPEG compression artifacts. <br> You are recommended to have a try :smiley:
 
 In the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo,
 
-- You can still use the original ESRGAN model or your re-trained ESRGAN model.
+- You can still use the original ESRGAN model or your re-trained ESRGAN model. [The model zoo in Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN#european_castle-model-zoo).
 - We provide a more handy inference script, which supports 1) **tile** inference; 2) images with **alpha channel**; 3) **gray** images; 4) **16-bit** images.
 - We also provide a **Windows executable file** `RealESRGAN-ncnn-vulkan` for easier use without installing the environment. This executable file also includes the original ESRGAN model.
-- The full training codes are also released in the [Real-ESRGAN] repo.
+- The full training codes are also released in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo.
 
-Welcome to open issue or open discussions in the [Real-ESRGAN] repo.
+Welcome to open issues or open discussions in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo.
 
 - If you have any question, you can open an issue in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo.
 - If you have any good ideas or demands, please open an issue/discussion in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo to let me know.
