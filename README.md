@@ -1,6 +1,7 @@
-## ESRGAN (Enhanced SRGAN) [:rocket: [BasicSR/EDVR](https://github.com/xinntao/BasicSR)]
+## ESRGAN (Enhanced SRGAN) [:rocket: [BasicSR](https://github.com/xinntao/BasicSR)] [[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)]
 
 :sparkles: **New Updates.**
+
 We have extended ESRGAN to [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN), which is a **more practical algorithm for real-world image restoration**. For example, it can also remove annoying JPEG compression artifacts. <br> You are recommended to have a try :smiley:
 
 In the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo,
