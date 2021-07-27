@@ -1,5 +1,38 @@
 ## ESRGAN (Enhanced SRGAN) [:rocket: [BasicSR/EDVR](https://github.com/xinntao/BasicSR)]
 
+We have extended ESRGAN to [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN), which is a **more practical algorithms for real-world image restoration**. For example, it can also remove annoying JPEG compression artifacts. <br> You are recommended to have a try :smiley:
+
+In the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo,
+
+- You can still use the original ESRGAN model or your re-trained ESRGAN model.
+- We provide a more handy inference script, which supports 1) **tile** inference; 2) images with **alpha channel**; 3) **gray** images; 4) **16-bit** images.
+- We also provide a **Windows executable file** `RealESRGAN-ncnn-vulkan` for easier use without installing the environment. This executable file also includes the original ESRGAN model.
+- The full training codes are also released in the [Real-ESRGAN] repo.
+
+Welcome to open issue or open discussions in the [Real-ESRGAN] repo.
+
+- If you have any question, you can open an issue in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo.
+- If you have any good ideas or demands, please open an issue/discussion in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo to let me know.
+- If you have some images that Real-ESRGAN could not well restored, please also open an issue/discussion in the [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) repo. I will record it (but I cannot guarantee to resolve it😛).
+
+Here are some examples for Real-ESRGAN:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xinntao/Real-ESRGAN/master/assets/teaser.jpg">
+</p>
+:book: Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data
+
+> [[Paper](https://arxiv.org/abs/2107.10833)] <br>
+> [Xintao Wang](https://xinntao.github.io/), Liangbin Xie, [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ), [Ying Shan](https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en) <br>
+> Applied Research Center (ARC), Tencent PCG<br>
+> Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
+
+-----
+
+As there may be some repos have dependency on this ESRGAN repo, we will not modify this ESRGAN repo (especially the codes).
+
+The following is the original README:
+
 #### The training codes are in :rocket: [BasicSR](https://github.com/xinntao/BasicSR). This repo only provides simple testing codes, pretrained models and the network interpolation demo.
 
 [BasicSR](https://github.com/xinntao/BasicSR) is an **open source** image and video super-resolution toolbox based on PyTorch (will extend to more restoration tasks in the future). <br>
