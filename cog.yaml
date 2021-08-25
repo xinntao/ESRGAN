@@ -1,0 +1,10 @@
+predict: "predict.py:Predictor"
+build:
+  python_version: "3.8"
+  python_packages:
+    - "numpy==1.20.0"
+    - "opencv-python==4.5.1.48"
+    - "torch==1.8.0"
+  system_packages:
+    - "libgl1-mesa-dev"
+    - "libglib2.0-0"
