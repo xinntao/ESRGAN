@@ -200,3 +200,11 @@ larger training patch size. (Evaluated on Set5 dataset with RGB channels.)
   <img height="250" src="figures/patch_a.png">
   <img height="250" src="figures/patch_b.png">
 </p>
+
+## Streamlit Webapp ✅
+[A simple streamlit based webapp demonstrating Image Super Resolution using ESRGAN.](https://github.com/prateekralhan/Streamlit-based-Image-Super-Resolution-using-ESRGAN)
+
+![demo](https://user-images.githubusercontent.com/29462447/159161859-4ed6f964-073d-4e77-89eb-86066257ab13.gif)
+
+
+
